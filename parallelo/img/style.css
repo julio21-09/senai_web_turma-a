@@ -38,11 +38,12 @@ nav ul{
     flex-direction: row;
     margin: 0;
     padding: 0;
+    float: right;
 }
 nav ul li a{
     text-decoration: line-through;
     padding: 55px 20px 55px 0;
-    float: left;
+  
     
 }
 nav#menu_principal{
@@ -64,3 +65,16 @@ nav#menu_principal{
 #trabalhos{
     background-color: yellow;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
