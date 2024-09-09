@@ -1,9 +1,9 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background-image: url(../img/project-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,73 +12,133 @@ header{
     height: 720px;
     padding-top: 15px;
 }
-nav{
-    background-color:rgb(2, 2, 2);
-    min-width: 1200px;
-    max-width: 1400px;
-    height: 125px;
-    margin: 0 auto 0 auto;
-}
-nav #logo{
-    margin:23px;
-    float:left;
 
+nav {
+    background-color: rgb(2, 2, 2);
+    width: 80%; /* Define a largura do nav para 80% da tela */
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adiciona um pequeno espaçamento nas laterais */
+    margin: 0 auto; /* Centraliza o nav horizontalmente */
+    box-sizing: border-box;
 }
-nav #logo_topo img{
+
+
+nav #logo {
+    display: flex;
+    align-items: center;
+}
+
+nav #logo img {
     height: 75px;
 }
-nav ul li {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
-    list-style: none;
-    text-align: center;
-    transition: 1s;
-}
-nav ul{
+
+nav ul {
     color: #ffffff;
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
-    float: right;
+    list-style: none;
 }
-nav ul li a{
-    text-decoration: line-through;
-    padding: 55px 20px 55px 0;
-  
-    
+
+nav ul li {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-left: 20px;
+    transition: 1s;
 }
-nav#menu_principal{
-    float: right;
+
+nav ul li a {
+    text-decoration: none; /* Retira o line-through do estado normal */
+    color: white;
+    padding: 55px 20px;
+    text-transform: uppercase;
+    transition: 1s;
 }
-#menu_principal li span{
+
+nav ul li a:hover {
+    color: #e7a920;
+    text-decoration: line-through; /* Aplica o line-through apenas ao passar o mouse */
+}
+
+#menu_principal li span {
     font-family: montserrat, sans-serif;
     font-size: 11px;
     color: rgb(255, 255, 255);
     margin-right: 3px;
-    margin-top: 60px ;
-    float: left;
+    margin-top: 60px;
 }
-#menu_principal li a{
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 1s;
-}
-   #menu_principal li a:hover { 
-    color: #ffffff;
-    transition: 1s;
-    text-decoration: line-through;
-  }
-section{
+.rule{
     background-image: url(../img/divider-dark.png);
-    width: 100%;
-    height: 500px;
     background-repeat: repeat-x;
+    padding-top: 100px;
 }
 
-#trabalhos{
-    background-color: rgb(253, 253, 253);
+section {
+    width: 100%;
+    height: 500px;
 }
+section{
+    background-color: white;
+}
+
+.icons {
+    background-color: white;
+    height: 120px; /* Aumenta a altura do contêiner */
+    width: 345px;  /* Aumenta a largura do contêiner */
+    margin: 0 auto;
+    display: flex;
+}
+
+.icons .icon img {
+    width: 115px; /* Aumenta ligeiramente o tamanho dos ícones */
+
+}
+
+
+.txt {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}
+
+.txt{
+    width: 850px;
+    margin: 0 auto;
+}
+.txt h6{
+    font-size: 28px;
+    font-weight: 300;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: 'roboto slab','serif';
+    text-align: center;
+    margin: 0;
+    margin-left: 85px;
+    margin-top: 40px;
+}
+
+section{
+    background-color: #ffffff;
+}
+
+.main-heading h4{
+    color: #e7a920;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+#trabalhos {
+    background-color: blue(253, 253, 253);
+}
+ 
